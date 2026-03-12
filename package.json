@@ -1,0 +1,26 @@
+{
+  "name": "centcom-theater-awareness",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "CENTCOM Theater Awareness System — ISR Prototype",
+  "scripts": {
+    "dev": "concurrently \"node server/server.js\" \"vite\"",
+    "build": "vite build",
+    "start": "node server/server.js",
+    "preview": "vite build && node server/server.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "concurrently": "^9.1.0",
+    "cors": "^2.8.5",
+    "deck.gl": "^9.1.0",
+    "express": "^4.21.0",
+    "maplibre-gl": "^4.7.0",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "vite": "^6.0.0"
+  }
+}
